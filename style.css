@@ -1,3 +1,11 @@
+body {
+    background-image: url(gambar/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: hue;
+    background-attachment: fixed;
+}
+
 .aboutpro {
     background-color: rgb(37, 37, 71);
     float: none;
