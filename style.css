@@ -1,0 +1,204 @@
+body {
+    background-image: url(gambar/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: hue;
+    background-attachment: fixed;
+}
+
+.aboutpro {
+    background-color: rgb(37, 37, 71);
+    float: none;
+}
+
+.aboutpro p {
+    width: 350px;
+    text-align: center;
+    margin: auto;
+    color: blanchedalmond;
+}
+
+.aboutpro h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    text-shadow: 2px 2px 5px black;
+}
+
+.aboutpro hr {
+    width: 200px;
+    margin: auto;
+    border-bottom: 1px solid white;
+    position: relative;
+    top: -5px;
+}
+
+.despro {
+    font-family: monospace;
+    text-align: center;
+    position: relative;
+    top: 90px;
+    right: 20px;
+    color: #ffffff;
+    block-size: 20px;
+    font-weight: bolder;
+    
+}
+
+.nickname {
+    text-align: center;
+    position: relative;
+    top: 100px;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px  rgb(0, 0, 0);
+}
+
+.margin {
+    margin: 20px;
+}
+
+* {
+    margin: 0;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333;
+}
+
+.body {
+    margin: 50px;
+}
+
+.header {
+    background-color: rgb(56, 136, 56);;
+}
+
+.linkcolor {
+    text-align: right;
+}
+
+.linkcolor a {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration-line: none;
+    margin: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    text-align: right;
+}
+
+header {
+    background-color: rgb(70, 201, 70);
+}
+
+.daftardemokritus {
+    position: relative;
+    right: -20px;
+}
+
+.batubata {
+    clear: both;
+}
+
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px;
+    text-indent: 40px;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+    text-transform: capitalize;
+}
+
+h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px;
+    text-transform: capitalize;
+}
+
+.daftarjalur {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 250px;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px;
+    margin: 10px;
+}
+
+.fakta {
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 10px;
+}
+
+/* ini khusus command gambar */
+
+.democritus {
+    width: 150px;
+    margin: 10px;
+    float: left;
+    padding-right: 20px;
+}
+
+.waifugambar {
+    width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 2px gray;
+}
+
+.batubata {
+    width: 200px;
+    clear: both;
+}
+
+.lebar200 {
+    width:  200px;
+    margin: 10px;
+}
+
+.lebar400 {
+    width: 400px;
+    margin: 10px;
+}
+
+.header #logo {
+    width: 200px;
+    margin: 15px;
+}
+
+.gambarlingkaran {
+    border-radius: 50%;
+    width: 200px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 100px;
+}
+
+.aboutpro .mitsuha {
+    width: 250px;
+    margin-bottom: auto;
+}
+
+.aboutpro .mugi {
+    width: 250px;
+    margin-bottom: auto;
+    position: relative;
+    left: 1100px;
+}
