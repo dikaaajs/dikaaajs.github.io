@@ -69,10 +69,16 @@ h3{
 
 /* ====================text==================== */
 
+.konteiner {
+    width: 95%;
+    /* background-color: aqua; */
+    margin:auto;
+}
+
 p {
     font-family: Arial, Helvetica, sans-serif;
     
-    width: 75%;
+    width: 95%;
     margin: auto;
     padding: 8px;
 }
