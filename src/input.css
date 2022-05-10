@@ -5,3 +5,52 @@
 body {
     font-family: 'inter',sans-serif;
 }
+
+/* hamburger */
+.hamburger {
+    @apply w-[20px] h-[2px] bg-black mt-[5px] transition duration-300 ease-in-out
+}
+
+.hamburger-active{
+    position: fixed;
+}
+
+.hamburger-active > div:nth-child(1) {
+    @apply origin-top-left rotate-45;
+
+}
+.hamburger-active > div:nth-child(2) {
+    @apply scale-0;
+
+}
+.hamburger-active > div:nth-child(3) {
+    @apply origin-bottom-left -rotate-45;
+
+}
+
+
+/* pop out hamburger */
+.pop-out-hamburger {
+    @apply bg-slate-50 
+}
+
+.link {
+    font-family: Inter var,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;;
+}
+
+:hover.link {
+    @apply text-blue-400
+}
+
+.display-none {
+    display: none;
+}
+
+/* style random */
+.bagus {
+    font-family: Inter var,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+.svg-setting {
+    @apply w-9 h-9 mr-[12px] z-20
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manipulasi background</title>
+
+    <style>
+        button {
+            background-color: white;
+            color: rgb(34, 34, 49);
+            margin-right: 3px;
+        }
+
+        .merah {
+            background-color: red;
+        }
+
+        #tombol input {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        #tombol p {
+            position: relative;
+            top: 50px;
+        }
+    </style>
+
+
+</head>
+<body>
+    
+<h1 style="text-align: center; font-weight: bold;" id="h1">manipulasi warna background</h1>
+
+<!-- tipe tombol 1 -->
+<div style="text-align: center;border: 2px solid; padding-bottom: 10px;" id="tombol">
+    <h3>tipe 1</h3>
+    <button type="button" id="terang">mode siang</button>
+    <button type="button" id="gelap">mode malam</button>
+</div>
+
+<!-- tipe tombol 2 -->
+<div style="margin-top: 20px; text-align: center;border: 2px solid; padding-bottom: 10px;" id="tombol">
+    <h3>tipe 2</h3>
+    <button type="button" id="toggle">ganti warna</button>
+</div>
+
+<!-- tipe tombol 3 -->
+<div style="margin-top: 20px; text-align: center;border: 2px solid; padding-bottom: 10px;" id="tombol">
+    <h3>tipe 3</h3>
+    <button type="button" id="disko">kelap kelip</button>
+</div>
+
+<!-- mengatur kepekatan rgb -->
+<div style="margin-top: 20px; text-align: center;border: 2px solid; padding-bottom: 10px;" id="tombol">
+    <h3>tipe 4</h3>
+    <p>merah</p>
+    <input type="range" min="0" max="255" id="slider1">
+    <p>hijau</p>
+    <input type="range" min="0" max="255" id="slider2">
+    <p>biru</p>
+    <input type="range" min="0" max="255" id="slider3">
+    <button type="button" id="campuran" style="margin-top: 30px;" >satukan</button>
+</div>
+
+
+
+
+
+<!-- script js -->
+<script>
+    const h1 = document.getElementById('h1');
+
+
+    // mode cuaca start
+    const terang = document.getElementById('terang');
+    terang.addEventListener("click", function(){ 
+        const body = document.getElementsByTagName('body')[0]
+        document.body.style.backgroundColor = 'white';
+        
+        const h1 = document.getElementsByTagName('h1')[0]
+        h1.style.color = 'black'
+    });
+
+    const gelap = document.getElementById('gelap');
+    gelap.addEventListener("click", function(){ 
+        const body = document.getElementsByTagName('body')[0]
+        document.body.style.backgroundColor = 'black';
+
+        const h1 = document.getElementsByTagName('h1')[0]
+        h1.style.color = 'white'
+
+        const tombol = document.getElementById('terang')
+        tombol.style.color = 'white';
+        tombol.style.backgroundColor = 'black';
+        tombol.style.borderColor = 'white';
+
+        const tombol1 = document.getElementById('gelap')
+        tombol1.style.color = 'white';
+        tombol1.style.backgroundColor = 'black';
+        tombol1.style.borderColor = 'white';
+    });
+    // mode cuaca end
+
+    // toggle start
+    document.getElementById('toggle').addEventListener('click', function(){
+        document.body.classList.toggle('merah') //code ini untuk menambahka class 'merah' pada elemen body
+    })
+    // toggle end
+
+    // random background start
+    document.getElementById('disko').addEventListener('click', function (){
+        const r = Math.round(Math.random() * 255 + 1 )
+        const g = Math.round(Math.random() * 255 + 1 )
+        const b = Math.round(Math.random() * 255 + 1 )
+        document.body.style.backgroundColor = 'rgb('+ r +','+ g +','+ b +')'
+    })    
+
+    // mengatur kepekatan rgb
+    const merah = document.getElementById('slider1')
+    const biru= document.getElementById('slider3')
+    const hijau = document.getElementById('slider2')
+
+
+    merah.addEventListener('input', function(){
+        const r = merah.value;
+        const g = hijau.value;
+        const b = biru.value;
+        document.body.style.backgroundColor = 'rgb('+ r +','+ g +','+ b +')'
+    })
+
+    hijau.addEventListener('input', function(){
+        const r = merah.value;
+        const g = hijau.value;
+        const b = biru.value;
+        document.body.style.backgroundColor = 'rgb('+ r +','+ g +','+ b +')'
+    })
+
+    biru.addEventListener('input', function(){
+        const r = merah.value;
+        const g = hijau.value;
+        const b = biru.value;
+        document.body.style.backgroundColor = 'rgb('+ r +','+ g +','+ b +')'
+    })
+
+
+</script>
+
+</body>
+</html>
