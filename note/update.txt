@@ -1,7 +1,0 @@
-04 - may - 2022
-add new folfer : projek
-
-05 - may - 2022
-mengisi folder projek dengan projek juragan angkot html dan js
-mengupdate portofolio dengan projek baru yg sudah beres
-menyortir file
