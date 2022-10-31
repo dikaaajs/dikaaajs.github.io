@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* set root style */
+
+* {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply w-full overflow-x-hidden;
+}
+
+p {
+  @apply font-paragraf font-[400] text-[13px];
+}
+
+a {
+  @apply font-paragraf text-[10px];
+}
+
+h1 {
+  @apply text-[25px] font-[600] font-headline;
+}
+
+h2 {
+  @apply font-roboto text-[20px] font-[700];
+}
+
+.btn {
+  @apply font-headline font-[600] py-[7px] px-[20px] bg-black text-white rounded-[5px];
+}
+
+.tag {
+  @apply px-[10px] py-[3px] rounded-[4px] bg-slate-900 text-[8px];
+}
+
+.headline {
+  @apply font-headline text-[30px] font-[800] xl:text-[50px];
+}
+
+/* hiasan */
+
+.hiasan-about {
+  @apply h-[20px] md:h-[30px] lg:h-[35px] absolute right-[45%] lg:right-[48%] md:top-[-10px] lg:top-[-13px];
+}
+
+.hiasan {
+  @apply absolute w-[150%] md:w-[70%] lg:w-[50%] right-[-110%] md:right-[-40%] lg:right-[-25%] top-[200px] -z-10 opacity-10;
+}
+
+.hiasan-repo {
+  @apply absolute top-[20px] w-[50%] md:w-[30%] lg:w-[25%] left-[-15%] md:left-[-5%] opacity-30;
+}
+
+/* header */
+
+/* skill */
+.card-skills {
+  @apply bg-black text-white px-[15px] py-[20px] mx-[35px] md:mx-0 rounded-[9px] md:w-1/3;
+}
+
+/* repository */
+.container-swiper {
+  @apply w-full relative mx-auto lg:w-full overflow-hidden;
+}
+
+.container-card {
+  @apply relative w-full h-full z-10 flex box-border duration-500;
+}
+
+.card-repo {
+  @apply shadow-md shadow-slate-300 rounded-[9px] relative w-full md:w-[45%] lg:w-[30%] h-full shrink-0 mr-[20px] my-[15px] bg-white;
+}
+
+.circle-btn {
+  @apply bg-black text-white p-[10px] rounded-[50%] z-20 flex justify-center items-center absolute top-[50%];
+}
+
+.circle-btn-left {
+  @apply left-[-28px];
+}
+
+.circle-btn-right {
+  @apply right-[-28px];
+}
+
+/* contact */
+.form {
+  @apply mt-[50px] w-[80%] bg-slate-100 rounded-[4px] mx-auto font-headline py-[50px];
+}
+
+.input-text {
+  @apply bg-white rounded-[4px] block w-full mx-auto font-paragraf;
+}

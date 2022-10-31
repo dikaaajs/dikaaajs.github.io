@@ -1,0 +1,11 @@
+.hilang {
+  display: none;
+}
+
+* {
+  scroll-behavior: smooth !important;
+}
+
+/* .container-card {
+  transition-timing-function: cubic-bezier(1, 1, 1, 1);
+} */
