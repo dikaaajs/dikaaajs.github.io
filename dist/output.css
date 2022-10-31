@@ -589,6 +589,14 @@ video {
   bottom: 0;
 }
 
+.top-\[5px\] {
+  top: 5px;
+}
+
+.top-\[10px\] {
+  top: 10px;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -732,6 +740,10 @@ video {
   gap: 5px;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .rounded-\[5px\] {
   border-radius: 5px;
 }
@@ -739,6 +751,24 @@ video {
 .rounded-t-\[9px\] {
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
+}
+
+.border-\[1px\] {
+  border-width: 1px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-black {

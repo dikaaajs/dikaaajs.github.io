@@ -13,13 +13,13 @@ let maxSlide = card.length;
 // screen md
 if (window.outerWidth >= 748 && window.outerWidth < 1024) {
   widthCard = tmp * (45 / 100);
-  slideWidth = widthCard * 2 + 40;
+  slideWidth = widthCard * 2 + 35;
   maxSlide = card.length / 2;
 
   // lg
 } else if (window.outerWidth >= 1024) {
   widthCard = tmp * (30 / 100);
-  slideWidth = widthCard * 3 + 60;
+  slideWidth = widthCard * 3 + 40;
   maxSlide = card.length / 3;
 
   // xl
