@@ -1,6 +1,5 @@
 const nav = document.querySelectorAll(".nav-btn");
 const sections = document.querySelectorAll(".sections");
-console.log(nav);
 
 function setActiveNav() {
   nav.forEach((i) => i.classList.remove("active"));
